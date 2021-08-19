@@ -12,13 +12,13 @@ example and uses the values that were input into the function:
 */
 
 export function sum(a, b) {
-    const sum = a + b;
+    const sum = a + b ;
     return [sum, `The sum of ${a} and ${b} is 11.`];
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 // Don't forget to create a new branch for your work on the next question!
-
+           
 /////////////////////////////////////
 /* Problem 2
 Write a function called multiply() that takes in two numbers as arguments and returns an array where the first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
@@ -54,7 +54,16 @@ how to do this. However, you may continue to use the + operator for string conca
 */
 
 export function sumAndMultiplyThreeNumbers(a, b, c) { //eslint-disable-line
+    
+    let add = sum(a, b);
+    let totalSum = sum(add[0], c);
+    let mul = multiply(a, b);
+    let totalProduct = multiply(mul[0], c);
+    let StrOne = `${a} and ${b} and ${c} sum to ${totalSum[0]}.`;
+    let StrTwo = `The product of ${a} and ${b} and ${c} is ${totalProduct[0]}.`;
 
+
+    return [totalSum[0], totalProduct[0], StrOne, StrTwo];
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
