@@ -141,16 +141,16 @@ figure out how to do this. However, you may continue to use the + operator for s
 This function should be dynamic, accepting an array of any length.
 // */
 
-// export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
-// //    let dynamicArray;
-//     // // dynamicArray.join();
-//     // let smush = (dynamicArray.join());
-//     // smush.array.forEach(element => { });
+export function multiplyAnyArray(dynamicArray) { //eslint-disable-line
+//    let dynamicArray;
+    // // dynamicArray.join();
+    // let smush = (dynamicArray.join());
+    // smush.array.forEach(element => { });
    
    
   
   
-// }
+}
 
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
